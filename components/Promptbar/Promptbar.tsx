@@ -157,10 +157,12 @@ export const Promptbar: FC<Props> = ({
           </div>
         ) : (
           <div className="mt-8 text-center text-white opacity-50 select-none">
+            <div style={{ display: 'none' }}>
             <IconMistOff className="mx-auto mb-3" />
             <span className="text-[14px] leading-normal">
               {t('No prompts.')}
             </span>
+            </div>
           </div>
         )}
       </div>
